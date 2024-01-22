@@ -1,0 +1,6 @@
+﻿  InputManager.cpp
+  MemoireExo.cpp
+C:\Users\e_garnier4\source\repos\MemoireExo\MemoireExo\MemoireExo.cpp(14,12): error C2660: 'InputManager::GetUserInput' : la fonction ne prend pas 1 arguments
+C:\Users\e_garnier4\source\repos\MemoireExo\MemoireExo\InputManager.h(18,7): message : voir la déclaration de 'InputManager::GetUserInput'
+C:\Users\e_garnier4\source\repos\MemoireExo\MemoireExo\MemoireExo.cpp(14,12): message : lors de la tentative de mise en correspondance de la liste des arguments '(std::list<std::string,std::allocator<std::string>> *)'
+  Génération de code en cours...
