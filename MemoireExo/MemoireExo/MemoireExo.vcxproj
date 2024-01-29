@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileData.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="MemoireExo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FileData.h" />
     <ClInclude Include="InputManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

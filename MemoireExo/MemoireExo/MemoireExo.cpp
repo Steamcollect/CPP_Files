@@ -10,6 +10,7 @@ list<string>* inputRegister;
 int main()
 {
 	InputManager getinputSC;
+	FileData fileData;
 
 	getinputSC.GetUserInput();
 }
