@@ -9,7 +9,6 @@ using namespace std;
 class InputManager
 {
 	FileData fileData;
-	list<string>* inputRegister;
 
 public:
 

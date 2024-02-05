@@ -4,27 +4,28 @@ void InputManager::GetUserInput() {
 	string tmpInput;
 	cin >> tmpInput;
 
-	//inputRegister->push_back(tmpInput);
 	fileData.WhriteInput(tmpInput);
-	//DisplayAllInput();
+	DisplayAllInput();
 	GetUserInput();
 }
 
 void InputManager::DisplayAllInput() {
 	system("cls");
+	fileData.ResetFileCursor();
+	vector<string> inputs = fileData.ReadInput();
 
-	for (auto n = inputRegister->begin(); n != inputRegister->end(); ++n) {
-		cout << *n << endl;
+	for (int i = 0; i < inputs.size(); i++)
+	{
+		cout << inputs[i] << endl;
 	}
 }
 
 InputManager::InputManager()
 {
-	inputRegister = new list<string>;
+	// Not implemented
 }
 
 InputManager::~InputManager()
 {
-	delete inputRegister;
-	inputRegister = nullptr;
+	// Not implemented
 }

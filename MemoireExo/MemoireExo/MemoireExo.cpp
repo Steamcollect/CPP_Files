@@ -5,12 +5,12 @@
 
 using namespace std;
 
-list<string>* inputRegister;
-
 int main()
 {
 	InputManager getinputSC;
 	FileData fileData;
+
+	fileData.ClearFile();
 
 	getinputSC.GetUserInput();
 }
