@@ -1,0 +1,4 @@
+﻿  Zombification.cpp
+C:\Users\e_garnier4\source\repos\Zombification\Zombification\GlobalHeader.h(6,9): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+C:\Users\e_garnier4\source\repos\Zombification\Zombification\Zombification.cpp(12,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+  Zombification.vcxproj -> C:\Users\e_garnier4\source\repos\Zombification\x64\Debug\Zombification.exe
