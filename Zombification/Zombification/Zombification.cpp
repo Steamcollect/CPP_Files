@@ -4,13 +4,13 @@ Company company;
 
 int main()
 {
+	company.employees.clear();
 	company.CreateEmployee(100);
 	company.employees[0]->SetNewZombificationState();
-
-	int employeeZombifiedCount = 0;
 	
 	srand(time(NULL));
 	int rand;
+	int employeeZombifiedCount;
 
 	for (size_t i = 0; i < 28; i++)
 	{
@@ -26,7 +26,14 @@ int main()
 				company.employees[i]->SetNewZombificationState();
 			}
 		}
-
 		cout << "There was " << company.GetEmployeeZombifiedCount() << " infected at the day " << i << endl;
+	}
+
+	string input;
+	cout << endl << "Press 'R' to reload" << endl;
+	cin >> input;
+	if (input == "r"){
+		system("cls");
+		main();
 	}
 }

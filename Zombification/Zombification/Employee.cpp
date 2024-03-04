@@ -8,7 +8,7 @@ void Employee::HandleInfection() {
 	if (state == ZombificationState::INCUBATING) {
 		infectionTime += 1;
 
-		if (infectionTime >= 3) {
+		if (infectionTime == incubationTime) {
 			SetNewZombificationState();
 		}
 	}
@@ -29,7 +29,8 @@ void Employee::SetNewZombificationState() {
 	}
 }
 
-Employee::Employee(int infectionTime, ZombificationState state) {
-	infectionTime = 0;
-	state = ZombificationState::SANE;
+Employee::Employee(int infTime, int incTime, ZombificationState zombificationState) {
+	infectionTime = infTime;
+	incubationTime = incTime;
+	state = zombificationState;
 }
