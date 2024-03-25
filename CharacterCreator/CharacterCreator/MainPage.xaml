@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="CharacterCreator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CharacterCreator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="1000" Stroke="White" VerticalAlignment="Center" Width="750" Fill="#FFF3F3FF"/>
+        <TextBlock x:Name="attackTxt" HorizontalAlignment="Left" Height="59" Margin="57,559,0,0" TextWrapping="Wrap" Text="Attack :  " VerticalAlignment="Top" Width="360" FontSize="25" FocusVisualSecondaryBrush="#99FF0000"/>
+        <TextBlock x:Name="defenseTxt" HorizontalAlignment="Left" Height="59" Margin="57,627,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" FontSize="25" FocusVisualSecondaryBrush="#99FF0000"><Run Text="defense"/><Run Text=" :  "/></TextBlock>
+        <TextBlock x:Name="luckTxt" HorizontalAlignment="Left" Height="59" Margin="57,695,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" FontSize="25" FocusVisualSecondaryBrush="#99FF0000"><Run Text="luck"/><Run Text=" :  "/></TextBlock>
+        <TextBlock x:Name="goldTxt" HorizontalAlignment="Left" Height="59" Margin="57,763,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" FontSize="25" FocusVisualSecondaryBrush="#99FF0000"><Run Text="gold"/><Run Text=" :  "/></TextBlock>
+        <Button x:Name="attackButton" Content="launch dice (2 x 6 + 5)" Height="50" Margin="431,542,0,0" VerticalAlignment="Top" Width="282" FontSize="22" Click="attackButton_Click"/>
+        <Button x:Name="defenseButton" Content="launch dice (2 x 6 + 5)" Height="50" Margin="431,619,0,0" VerticalAlignment="Top" Width="282" FontSize="22" Click="defenseButton_Click"/>
+        <Button x:Name="luckButton" Content="launch dice (1 x 6 + 5)" Height="50" Margin="431,687,0,0" VerticalAlignment="Top" Width="282" FontSize="22" Click="luckButton_Click"/>
+        <Button x:Name="goldButton" Content="launch dice (3 x 6 + 10)" Height="50" Margin="431,755,0,0" VerticalAlignment="Top" Width="282" FontSize="22" Click="goldButton_Click"/>
+        <Button x:Name="allDiceButton" Content="launch all dices" Height="50" Margin="57,865,0,0" VerticalAlignment="Top" Width="656" FontSize="22" Click="allDiceButton_Click"/>
+        <TextBox x:Name="nameTxt" HorizontalAlignment="Left" Margin="57,72,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="656" Height="58" FontSize="30" TextChanged="nameTxt_TextChanged"/>
+        <TextBox x:Name="descriptionTxt" HorizontalAlignment="Left" Margin="57,158,0,0" TextWrapping="Wrap" Text="description&#xD;&#xA;" VerticalAlignment="Top" Width="656" Height="342" FontSize="25" TextChanged="descriptionTxt_TextChanged"/>
+        <TextBlock x:Name="tmpTxt" HorizontalAlignment="Left" Height="59" Margin="57,505,0,0" TextWrapping="Wrap" Text="Attack :  " VerticalAlignment="Top" Width="360" FontSize="25" FocusVisualSecondaryBrush="#99FF0000"/>
+        <Rectangle HorizontalAlignment="Left" Height="428" Margin="824,72,0,0" Stroke="White" VerticalAlignment="Top" Width="580" Fill="#FFE9ECFF" FocusVisualPrimaryBrush="White"/>
+
+    </Grid>
+</Page>
