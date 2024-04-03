@@ -9,6 +9,48 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Rectangle x:Name="questListPanel" Height="1000" Stroke="White" VerticalAlignment="Center" Fill="#FFE4E4E4" Margin="0,0,1216,0"/>
 
+        <Rectangle x:Name="editorPanel" HorizontalAlignment="Left" Height="1000" Stroke="White" VerticalAlignment="Center" Width="848" Margin="289,0,0,0" Fill="#FFCACACA"/>
+
+        <!--Main info quest-->
+        <Rectangle x:Name="QuestMainInfoPanel" HorizontalAlignment="Left" Height="122" Margin="328,28,0,0" Stroke="White" VerticalAlignment="Top" Width="770" Fill="#FFEDEDED"/>
+        <TextBlock x:Name="QuestID_TXT" HorizontalAlignment="Left" Margin="341,46,0,0" TextWrapping="Wrap" Text="Quest ID" VerticalAlignment="Top"/>
+        <TextBlock x:Name="NpcID_TXT" HorizontalAlignment="Left" Margin="341,80,0,0" TextWrapping="Wrap" Text="NPC ID" VerticalAlignment="Top"/>
+        <TextBlock x:Name="QuestTitle_TXT" HorizontalAlignment="Left" Margin="341,117,0,0" TextWrapping="Wrap" Text="Quest Title" VerticalAlignment="Top"/>
+        <TextBox x:Name="npcID_txtBox" HorizontalAlignment="Left" Margin="456,73,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="622" TextChanged="npcID_txtBox_TextChanged"/>
+        <TextBox x:Name="questTitle_TxtBox" HorizontalAlignment="Left" Margin="456,110,0,0" TextWrapping="Wrap" Text="Slay the princess" VerticalAlignment="Top" Width="622" TextChanged="questTitle_TxtBox_TextChanged"/>
+        <TextBlock x:Name="questID_txtBox" HorizontalAlignment="Left" Margin="456,46,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" SelectionChanged="questID_txtBox_SelectionChanged"/>
+
+        <!--dialog quest-->
+        <Rectangle x:Name="QuestDialogPanel" HorizontalAlignment="Left" Height="407" Margin="328,169,0,0" Stroke="White" VerticalAlignment="Top" Width="399" Fill="#FFEDEDED"/>
+        <TextBox x:Name="preQuestDialog_txtBox" Header="Pre dialog" HorizontalAlignment="Left" Margin="342,187,0,0" TextWrapping="Wrap" Text="Go slay the princess to save the kingdom" VerticalAlignment="Top" Width="372" Height="100" TextChanged="preQuestDialog_txtBox_TextChanged"/>
+        <TextBox x:Name="questInProgressDialog_txtBox" Header="In progress dialog" HorizontalAlignment="Left" Margin="341,306,0,0" TextWrapping="Wrap" Text="Did you already slay the princess ?" VerticalAlignment="Top" Width="372" Height="100" TextChanged="questInProgressDialog_txtBox_TextChanged"/>
+        <TextBox x:Name="postQuestDialog_txtBox" Header="Post dialog" HorizontalAlignment="Left" Margin="341,428,0,0" TextWrapping="Wrap" Text="Thanks you, you have save the kingdom !!!" VerticalAlignment="Top" Width="372" Height="128" TextChanged="postQuestDialog_txtBox_TextChanged"/>
+
+
+        <Rectangle x:Name="testPanel" HorizontalAlignment="Left" Height="1000" Stroke="White" VerticalAlignment="Center" Width="358" Fill="#FFE4E4E4" Margin="1142,0,0,0"/>
+        <Rectangle x:Name="ObjectivePanel" HorizontalAlignment="Left" Height="136" Margin="750,169,0,0" Stroke="White" VerticalAlignment="Top" Width="348" Fill="#FFEDEDED"/>
+        <TextBlock x:Name="ObjectivesTXT" HorizontalAlignment="Left" Margin="767,181,0,0" TextWrapping="Wrap" Text="Objectives" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TypeTXT" HorizontalAlignment="Left" Margin="767,228,0,0" TextWrapping="Wrap" Text="Type" VerticalAlignment="Top"/>
+        <TextBlock x:Name="AmountTXT" HorizontalAlignment="Left" Margin="767,271,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top"/>
+        <Rectangle x:Name="RewardPanel" HorizontalAlignment="Left" Height="136" Margin="750,325,0,0" Stroke="White" VerticalAlignment="Top" Width="348" Fill="#FFEDEDED"/>
+        <TextBlock x:Name="RewardsTXT" HorizontalAlignment="Left" Margin="767,343,0,0" TextWrapping="Wrap" Text="Rewards" VerticalAlignment="Top"/>
+        <TextBlock x:Name="CoinsTXT" HorizontalAlignment="Left" Margin="767,428,0,0" TextWrapping="Wrap" Text="Coins" VerticalAlignment="Top"/>
+        <TextBlock x:Name="XP_TXT" HorizontalAlignment="Left" Margin="767,387,0,0" TextWrapping="Wrap" Text="XP" VerticalAlignment="Top"/>
+        <TextBox x:Name="amount_txtBox" HorizontalAlignment="Left" Margin="876,264,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="amount_txtBox_TextChanged"/>
+        <TextBox x:Name="xp_txtBox" HorizontalAlignment="Left" Margin="876,380,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="xp_txtBox_TextChanged"/>
+        <TextBox x:Name="coins_txtBox" HorizontalAlignment="Left" Margin="876,421,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="coins_txtBox_TextChanged"/>
+        <ComboBox x:Name="type_dropDown" Height="32" Margin="876,226,0,0" Width="202"/>
+        <Button x:Name="SaveQuestButton" Content="Save quest" Margin="938,524,0,0" VerticalAlignment="Top" Width="160" Height="52"/>
+        <Button x:Name="ResetQuestButton" Content="Reset quest" Margin="750,524,0,0" VerticalAlignment="Top" Width="161" Height="52" Click="ResetQuestButton_Click"/>
+
+        <Button x:Name="AddQuestButton" Content="Add quest" Width="120" Margin="142,39,0,0" VerticalAlignment="Top" Click="AddQuestButton_Click"/>
+
+
+        <StackPanel x:Name="QuestContent" HorizontalAlignment="Left" Height="890" Margin="0,110,0,0" VerticalAlignment="Top" Width="284">
+            <Button x:Name="Button1" Content="Slay the princess" HorizontalAlignment="Stretch" Margin="0,0,0,20" Width="251"/>
+        </StackPanel>
+        <TextBlock x:Name="QuestID_TXT_Copy" HorizontalAlignment="Left" Margin="25,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="25" RenderTransformOrigin="0.373,-0.1"><Run Text="Quest"/><Run Text="s"/><LineBreak/><Run/></TextBlock>
     </Grid>
 </Page>
