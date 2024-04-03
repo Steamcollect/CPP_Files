@@ -8,6 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+
     <Grid>
         <Rectangle x:Name="questListPanel" Height="1000" Stroke="White" VerticalAlignment="Center" Fill="#FFE4E4E4" Margin="0,0,1216,0"/>
 
@@ -42,8 +43,7 @@
         <TextBox x:Name="xp_txtBox" HorizontalAlignment="Left" Margin="876,380,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="xp_txtBox_TextChanged"/>
         <TextBox x:Name="coins_txtBox" HorizontalAlignment="Left" Margin="876,421,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="coins_txtBox_TextChanged"/>
         <ComboBox x:Name="type_dropDown" Height="32" Margin="876,226,0,0" Width="202"/>
-        <Button x:Name="SaveQuestButton" Content="Save quest" Margin="938,524,0,0" VerticalAlignment="Top" Width="160" Height="52"/>
-        <Button x:Name="ResetQuestButton" Content="Reset quest" Margin="750,524,0,0" VerticalAlignment="Top" Width="161" Height="52" Click="ResetQuestButton_Click"/>
+        <Button x:Name="ResetQuestButton" Content="Reset quest" Margin="751,524,0,0" VerticalAlignment="Top" Width="347" Height="52" Click="ResetQuestButton_Click"/>
 
         <Button x:Name="AddQuestButton" Content="Add quest" Width="120" Margin="142,39,0,0" VerticalAlignment="Top" Click="AddQuestButton_Click"/>
 

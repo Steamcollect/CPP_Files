@@ -131,6 +131,6 @@ void QuestEditor::MainPage::AddQuestButton_Click(Platform::Object^ sender, Windo
 {
 	Button ^ b = ref new Button();
 	QuestContent->Children->Append(b);
-	b->Content = "Button";
-	b->Style = safe_cast<Windows::UI::Xaml::Style^>(Button1->Style);
+	b->Content = "Button" + quests.size();
+	b->Style = Button1->Style;
 }
