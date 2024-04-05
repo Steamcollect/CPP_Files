@@ -32,17 +32,17 @@ MainPage::MainPage()
 	InitializeComponent();
 }
 
-void ResetPanelVisual(TextBox npcID_box, TextBox questName_box, TextBox preDialog_box, TextBox inDialog_box, TextBox postDialog_box, TextBox objectivesAmount_box, TextBox coins_box, TextBox xp_box) {
-	npcID_box.Text = "";
-	questName_box.Text = "";
+void MainPage::ResetPanelVisual() {
+	npcID_txtBox->Text = "";
+	questID_txtBox->Text = "";
 
-	preDialog_box.Text = "";
-	inDialog_box.Text = "";
-	postDialog_box.Text = "";
-
-	objectivesAmount_box.Text = "";
-	coins_box.Text = "";
-	xp_box.Text = "";
+	preQuestDialog_txtBox->Text = "";
+	questInProgressDialog_txtBox->Text = "";
+	postQuestDialog_txtBox->Text = "";
+	
+	amount_txtBox->Text = "";
+	coins_txtBox->Text = "";
+	xp_txtBox->Text = "";
 
 	currentQuest.ResetInfos();
 }
@@ -124,7 +124,8 @@ void QuestEditor::MainPage::amount_txtBox_TextChanged(Platform::Object^ sender, 
 
 void QuestEditor::MainPage::ResetQuestButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-
+	currentQuest.ResetInfos();
+	ResetPanelVisual();
 }
 
 void QuestEditor::MainPage::AddQuestButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
