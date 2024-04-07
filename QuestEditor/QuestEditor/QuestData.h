@@ -6,17 +6,33 @@ using namespace std;
 class QuestData
 {
 public:
+	enum QuestState
+	{
+		NotStarted,
+		Started,
+		Finished
+	};
+
+	enum ObjectiveType {
+		Slay,
+		Loot,
+		Save
+	};
+
 	//Main infos
-	string questID, npcID;
+	int questID, npcID;
 	string questTitle;
 
 	// Objectives infos
-	string objectiveType, objectivesQuantity;
-	string coinsGiven, xpGiven;
+	ObjectiveType objectiveType;
+	int objectivesQuantity;
+	int coinsGiven, xpGiven;
 
 	//Dialog infos
 	string preQuestDialog, inProgressDialog, postQuestDialog;
-	bool isStarted, isAchieved;
 
+	QuestState questState;
+
+	// Functions
 	void ResetInfos();
 };

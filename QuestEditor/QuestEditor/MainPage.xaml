@@ -10,12 +10,12 @@
 
 
     <Grid>
-        <Rectangle x:Name="questListPanel" Height="1000" Stroke="White" VerticalAlignment="Center" Fill="#FFE4E4E4" Margin="0,0,1216,0"/>
+        <Rectangle x:Name="questListPanel" Height="1000" Stroke="White" VerticalAlignment="Center" Fill="#FF848484" Margin="0,0,1216,0"/>
 
         <Rectangle x:Name="editorPanel" HorizontalAlignment="Left" Height="1000" Stroke="White" VerticalAlignment="Center" Width="848" Margin="289,0,0,0" Fill="#FFCACACA"/>
 
         <!--Main info quest-->
-        <Rectangle x:Name="QuestMainInfoPanel" HorizontalAlignment="Left" Height="122" Margin="328,28,0,0" Stroke="White" VerticalAlignment="Top" Width="770" Fill="#FFEDEDED"/>
+        <Rectangle x:Name="QuestMainInfoPanel" HorizontalAlignment="Left" Height="184" Margin="328,28,0,0" Stroke="White" VerticalAlignment="Top" Width="770" Fill="#FF4D4D4D"/>
         <TextBlock x:Name="QuestID_TXT" HorizontalAlignment="Left" Margin="341,46,0,0" TextWrapping="Wrap" Text="Quest ID" VerticalAlignment="Top"/>
         <TextBlock x:Name="NpcID_TXT" HorizontalAlignment="Left" Margin="341,80,0,0" TextWrapping="Wrap" Text="NPC ID" VerticalAlignment="Top"/>
         <TextBlock x:Name="QuestTitle_TXT" HorizontalAlignment="Left" Margin="341,117,0,0" TextWrapping="Wrap" Text="Quest Title" VerticalAlignment="Top"/>
@@ -24,33 +24,51 @@
         <TextBlock x:Name="questID_txtBox" HorizontalAlignment="Left" Margin="456,46,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" SelectionChanged="questID_txtBox_SelectionChanged"/>
 
         <!--dialog quest-->
-        <Rectangle x:Name="QuestDialogPanel" HorizontalAlignment="Left" Height="407" Margin="328,169,0,0" Stroke="White" VerticalAlignment="Top" Width="399" Fill="#FFEDEDED"/>
-        <TextBox x:Name="preQuestDialog_txtBox" Header="Pre dialog" HorizontalAlignment="Left" Margin="342,187,0,0" TextWrapping="Wrap" Text="Go slay the princess to save the kingdom" VerticalAlignment="Top" Width="372" Height="100" TextChanged="preQuestDialog_txtBox_TextChanged"/>
-        <TextBox x:Name="questInProgressDialog_txtBox" Header="In progress dialog" HorizontalAlignment="Left" Margin="341,306,0,0" TextWrapping="Wrap" Text="Did you already slay the princess ?" VerticalAlignment="Top" Width="372" Height="100" TextChanged="questInProgressDialog_txtBox_TextChanged"/>
-        <TextBox x:Name="postQuestDialog_txtBox" Header="Post dialog" HorizontalAlignment="Left" Margin="341,428,0,0" TextWrapping="Wrap" Text="Thanks you, you have save the kingdom !!!" VerticalAlignment="Top" Width="372" Height="128" TextChanged="postQuestDialog_txtBox_TextChanged"/>
+        <Rectangle x:Name="QuestDialogPanel" HorizontalAlignment="Left" Height="407" Margin="328,233,0,0" Stroke="White" VerticalAlignment="Top" Width="399" Fill="#FFC3C3C3"/>
+        <TextBox x:Name="preQuestDialog_txtBox" Header="Pre dialog" HorizontalAlignment="Left" Margin="342,251,0,0" TextWrapping="Wrap" Text="Go slay the princess to save the kingdom" VerticalAlignment="Top" Width="372" Height="100" TextChanged="preQuestDialog_txtBox_TextChanged"/>
+        <TextBox x:Name="questInProgressDialog_txtBox" Header="In progress dialog" HorizontalAlignment="Left" Margin="341,370,0,0" TextWrapping="Wrap" Text="Did you already slay the princess ?" VerticalAlignment="Top" Width="372" Height="100" TextChanged="questInProgressDialog_txtBox_TextChanged"/>
+        <TextBox x:Name="postQuestDialog_txtBox" Header="Post dialog" HorizontalAlignment="Left" Margin="341,492,0,0" TextWrapping="Wrap" Text="Thanks you, you have save the kingdom !!!" VerticalAlignment="Top" Width="372" Height="128" TextChanged="postQuestDialog_txtBox_TextChanged"/>
 
 
-        <Rectangle x:Name="testPanel" HorizontalAlignment="Left" Height="1000" Stroke="White" VerticalAlignment="Center" Width="358" Fill="#FFE4E4E4" Margin="1142,0,0,0"/>
-        <Rectangle x:Name="ObjectivePanel" HorizontalAlignment="Left" Height="136" Margin="750,169,0,0" Stroke="White" VerticalAlignment="Top" Width="348" Fill="#FFEDEDED"/>
-        <TextBlock x:Name="ObjectivesTXT" HorizontalAlignment="Left" Margin="767,181,0,0" TextWrapping="Wrap" Text="Objectives" VerticalAlignment="Top"/>
-        <TextBlock x:Name="TypeTXT" HorizontalAlignment="Left" Margin="767,228,0,0" TextWrapping="Wrap" Text="Type" VerticalAlignment="Top"/>
-        <TextBlock x:Name="AmountTXT" HorizontalAlignment="Left" Margin="767,271,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top"/>
-        <Rectangle x:Name="RewardPanel" HorizontalAlignment="Left" Height="136" Margin="750,325,0,0" Stroke="White" VerticalAlignment="Top" Width="348" Fill="#FFEDEDED"/>
-        <TextBlock x:Name="RewardsTXT" HorizontalAlignment="Left" Margin="767,343,0,0" TextWrapping="Wrap" Text="Rewards" VerticalAlignment="Top"/>
-        <TextBlock x:Name="CoinsTXT" HorizontalAlignment="Left" Margin="767,428,0,0" TextWrapping="Wrap" Text="Coins" VerticalAlignment="Top"/>
-        <TextBlock x:Name="XP_TXT" HorizontalAlignment="Left" Margin="767,387,0,0" TextWrapping="Wrap" Text="XP" VerticalAlignment="Top"/>
-        <TextBox x:Name="amount_txtBox" HorizontalAlignment="Left" Margin="876,264,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="amount_txtBox_TextChanged"/>
-        <TextBox x:Name="xp_txtBox" HorizontalAlignment="Left" Margin="876,380,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="xp_txtBox_TextChanged"/>
-        <TextBox x:Name="coins_txtBox" HorizontalAlignment="Left" Margin="876,421,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="coins_txtBox_TextChanged"/>
-        <ComboBox x:Name="type_dropDown" Height="32" Margin="876,226,0,0" Width="202"/>
-        <Button x:Name="ResetQuestButton" Content="Reset quest" Margin="751,524,0,0" VerticalAlignment="Top" Width="347" Height="52" Click="ResetQuestButton_Click"/>
+        <!--Objective quest-->
+        <Rectangle x:Name="ObjectivePanel" HorizontalAlignment="Left" Height="136" Margin="750,237,0,0" Stroke="White" VerticalAlignment="Top" Width="348" Fill="#FF979797"/>
+        <TextBlock x:Name="ObjectivesTXT" HorizontalAlignment="Left" Margin="767,249,0,0" TextWrapping="Wrap" Text="Objectives" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TypeTXT" HorizontalAlignment="Left" Margin="767,296,0,0" TextWrapping="Wrap" Text="Type" VerticalAlignment="Top"/>
+        <TextBlock x:Name="AmountTXT" HorizontalAlignment="Left" Margin="767,339,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top"/>
+        <Rectangle x:Name="RewardPanel" HorizontalAlignment="Left" Height="136" Margin="750,393,0,0" Stroke="White" VerticalAlignment="Top" Width="348" Fill="#FFACACAC"/>
+        <TextBlock x:Name="RewardsTXT" HorizontalAlignment="Left" Margin="767,411,0,0" TextWrapping="Wrap" Text="Rewards" VerticalAlignment="Top"/>
+        <TextBlock x:Name="CoinsTXT" HorizontalAlignment="Left" Margin="767,496,0,0" TextWrapping="Wrap" Text="Coins" VerticalAlignment="Top"/>
+        <TextBlock x:Name="XP_TXT" HorizontalAlignment="Left" Margin="767,455,0,0" TextWrapping="Wrap" Text="XP" VerticalAlignment="Top"/>
+        <TextBox x:Name="amount_txtBox" HorizontalAlignment="Left" Margin="876,332,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="amount_txtBox_TextChanged"/>
+        <TextBox x:Name="xp_txtBox" HorizontalAlignment="Left" Margin="876,448,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="xp_txtBox_TextChanged"/>
+        <TextBox x:Name="coins_txtBox" HorizontalAlignment="Left" Margin="876,489,0,0" TextWrapping="Wrap" Text="999" VerticalAlignment="Top" Width="202" TextChanged="coins_txtBox_TextChanged"/>
 
+        <!--TestPanel-->
+        <Rectangle x:Name="testPanel" HorizontalAlignment="Left" Height="1000" Stroke="White" VerticalAlignment="Center" Width="358" Fill="#FF676767" Margin="1142,0,0,0"/>
+
+        <!--Buttons-->
+        <Button x:Name="ResetInformationButton" Content="Reset informations" Margin="751,539,0,0" Width="347" Height="43" Click="ResetQuestButton_Click" VerticalAlignment="Top" Background="#339A9A9A"/>
         <Button x:Name="AddQuestButton" Content="Add quest" Width="120" Margin="142,39,0,0" VerticalAlignment="Top" Click="AddQuestButton_Click"/>
 
 
         <StackPanel x:Name="QuestContent" HorizontalAlignment="Left" Height="890" Margin="0,110,0,0" VerticalAlignment="Top" Width="284">
-            <Button x:Name="Button1" Content="Slay the princess" HorizontalAlignment="Stretch" Margin="0,0,0,20" Width="251"/>
+            <Button x:Name="Button_0" Content="Slay the princess" HorizontalAlignment="Stretch" Margin="0,0,0,20" Width="251"/>
         </StackPanel>
-        <TextBlock x:Name="QuestID_TXT_Copy" HorizontalAlignment="Left" Margin="25,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="25" RenderTransformOrigin="0.373,-0.1"><Run Text="Quest"/><Run Text="s"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="QuestTitle" HorizontalAlignment="Left" Margin="25,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="25" RenderTransformOrigin="0.373,-0.1"><Run Text="Quest"/><Run Text="s"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="DeleteQuestButton" Content="Delete quest" Margin="751,597,0,0" Width="347" Height="43" VerticalAlignment="Top" Background="#33929292" Click="DeleteQuestButton_Click"/>
+        <Button x:Name="InteractButton" Content="Interact quest" Margin="1175,393,0,0" Width="293" Height="43" Background="#339A9A9A" Click="InteractButton_Click" VerticalAlignment="Top"/>
+        <Button x:Name="ResetQuestButton1" Content="Reset" Margin="1175,505,0,0" Width="293" Height="43" Background="#339A9A9A" VerticalAlignment="Top" Click="TestResetQuestInfo"/>
+        <TextBlock x:Name="QuestTitle_Copy" HorizontalAlignment="Left" Margin="1175,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="25" RenderTransformOrigin="0.373,-0.1" Text="Test"/>
+        <TextBlock x:Name="QuestStateTitleTxt" HorizontalAlignment="Left" Margin="341,168,0,0" TextWrapping="Wrap" Text="Quest state" VerticalAlignment="Top"/>
+        <TextBlock x:Name="QuestStateTxt" HorizontalAlignment="Left" Margin="456,168,0,0" TextWrapping="Wrap" Text="Not started" VerticalAlignment="Top" SelectionChanged="questID_txtBox_SelectionChanged"/>
+        <TextBlock x:Name="DialogTest" HorizontalAlignment="Left" Margin="1175,197,0,0" TextWrapping="Wrap" Text="Dialog test" VerticalAlignment="Top" SelectionChanged="questID_txtBox_SelectionChanged" Height="100" Width="293" SelectionHighlightColor="#FF5362A1" FocusVisualSecondaryBrush="#99A95656" Foreground="White" FocusVisualPrimaryBrush="White"/>
+        <TextBlock x:Name="testCoinsAmountTXT" HorizontalAlignment="Left" Margin="1175,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="questID_txtBox_SelectionChanged" Height="26" Width="293" SelectionHighlightColor="#FF5362A1" FocusVisualSecondaryBrush="#99A95656" Foreground="White" FocusVisualPrimaryBrush="White"><Run Text="Coins amount"/><Run Text=" : 0"/></TextBlock>
+        <TextBlock x:Name="testXpAmountTXT" HorizontalAlignment="Left" Margin="1175,358,0,0" TextWrapping="Wrap" Text="XP : 0" VerticalAlignment="Top" SelectionChanged="questID_txtBox_SelectionChanged" Height="26" Width="293" SelectionHighlightColor="#FF5362A1" FocusVisualSecondaryBrush="#99A95656" Foreground="White" FocusVisualPrimaryBrush="White"/>
+        <ComboBox x:Name="ObjectiveTypeDropdown" Height="36" Margin="876,288,0,0" Width="202" SelectionChanged="ObjectiveTypeDropdown_SelectionChanged">
+            <ComboBoxItem Content="Save"/>
+            <ComboBoxItem Content="Slay"/>
+            <ComboBoxItem Content="Loot"/>
+        </ComboBox>
+        <Button x:Name="UpdateQuestButton" Content="Update quest" Margin="1175,448,0,0" Width="293" Height="43" Background="#339A9A9A" Click="UpdateQuestButton" VerticalAlignment="Top"/>
     </Grid>
 </Page>

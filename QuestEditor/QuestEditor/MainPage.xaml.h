@@ -29,6 +29,13 @@ namespace QuestEditor
 		void ResetQuestButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 		void AddQuestButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 
-		void ResetPanelVisual();
+		void SetPanelVisual();
+		void OnButtonClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void DeleteQuestButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void InteractButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void TestResetQuestInfo(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void ResetTestPanel();
+		void ObjectiveTypeDropdown_SelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^ e);
+		void UpdateQuestButton(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }

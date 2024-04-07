@@ -2,18 +2,15 @@
 #include "QuestData.h"
 
 void QuestData::ResetInfos() {
-	npcID = "";
+	npcID = 0;
 	questTitle = "";
-
-	objectiveType = "";
-	objectivesQuantity = "";
-	coinsGiven = "";
-	xpGiven = "";
+	
+	//objectiveType = QuestData::ObjectiveType::Loot;
+	objectivesQuantity = 0;
+	coinsGiven = 0;
+	xpGiven = 0;
 
 	preQuestDialog = "";
 	inProgressDialog = "";
 	postQuestDialog = "";
-
-	isStarted = false;
-	isAchieved = false;
 }
