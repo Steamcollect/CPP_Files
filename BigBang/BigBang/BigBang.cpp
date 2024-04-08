@@ -38,7 +38,8 @@ void PrintPlanetsInfos() {
 			break;
 		}
 
-		cout << "Planet " << i + 1 << " is " << planetType << ", at a distance of " << planets[i].radius << "km from Earth, and with a gravity of " << planets[i].gravityForce << "m/s2\n\r";
+		cout << "Planet " << i + 1 << " is " << planetType << ", at a distance of " << planets[i].radius << "km from Earth, and with a gravity of " << planets[i].gravityForce << "m/s2";
+		cout << endl << "----------------------------------------------------------------------------------------------------" << endl;
 	}
 }
 

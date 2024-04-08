@@ -12,7 +12,7 @@ void PlanetData::CreateRandomly() {
 		PlanetData::SetPlanetData(radiusMaxGaseous,radiusMaxDead,gravityMinGaseous,gravityMaxGaseous);
 		break;
 	case Dead:
-		PlanetData::SetPlanetData(radiusMaxDead,radiusMaxDead,gravityMinDead,gravityMaxDead);
+		PlanetData::SetPlanetData(radiusMinDead,radiusMaxDead,gravityMinDead,gravityMaxDead);
 		break;
 	default:
 		break;
