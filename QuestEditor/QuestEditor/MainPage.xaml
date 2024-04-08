@@ -69,6 +69,6 @@
             <ComboBoxItem Content="Slay"/>
             <ComboBoxItem Content="Loot"/>
         </ComboBox>
-        <Button x:Name="UpdateQuestButton" Content="Update quest" Margin="1175,448,0,0" Width="293" Height="43" Background="#339A9A9A" Click="UpdateQuestButton" VerticalAlignment="Top"/>
+        <Button x:Name="UpdateQuestButton" Content="Update quest" Margin="1175,448,0,0" Width="293" Height="43" Background="#339A9A9A" VerticalAlignment="Top" Click="UpdateQuestButton_Click"/>
     </Grid>
 </Page>

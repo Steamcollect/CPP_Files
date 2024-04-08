@@ -36,6 +36,6 @@ namespace QuestEditor
 		void TestResetQuestInfo(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 		void ResetTestPanel();
 		void ObjectiveTypeDropdown_SelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^ e);
-		void UpdateQuestButton(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void UpdateQuestButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }

@@ -145,13 +145,13 @@ void QuestEditor::MainPage::InteractButton_Click(Platform::Object^ sender, Windo
 	switch(currentQuest.questState)
 	{
 	case QuestData::QuestState::NotStarted:
-		//DialogTest->Text = currentQuest.preQuestDialog;
+		DialogTest->Text = preQuestDialog_txtBox->Text;
 		break;
 	case QuestData::QuestState::Started:
-		//DialogTest->Text = currentQuest.inProgressDialog;
+		DialogTest->Text = questInProgressDialog_txtBox->Text;
 		break;
 	case QuestData::QuestState::Finished:
-		//DialogTest->Text = currentQuest.postQuestDialog;
+		DialogTest->Text = postQuestDialog_txtBox->Text;
 		break;
 	default:
 		break;
@@ -201,7 +201,7 @@ void QuestEditor::MainPage::ObjectiveTypeDropdown_SelectionChanged(Platform::Obj
 	else if (objectiveTypeDropdown->SelectedItem == "Save") currentQuest.objectiveType = QuestData::ObjectiveType::Save;
 }
 
-void QuestEditor::MainPage::UpdateQuestButton(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+void QuestEditor::MainPage::UpdateQuestButton_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
 	switch (currentQuest.questState)
 	{
@@ -212,6 +212,7 @@ void QuestEditor::MainPage::UpdateQuestButton(Platform::Object^ sender, Windows:
 		currentQuest.questState = QuestData::QuestState::Finished;
 		break;
 	case QuestData::QuestState::Finished:
+		//Do nothing
 		break;
 	default:
 		break;
